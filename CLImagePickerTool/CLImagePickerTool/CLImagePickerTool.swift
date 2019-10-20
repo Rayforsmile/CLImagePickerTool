@@ -196,6 +196,7 @@ public class CLImagePickerTool: NSObject,UIImagePickerControllerDelegate,UINavig
                         self.clPickerToolClouse!(assetArr,cutImage)
                     }
                 }
+                self.superVC?.modalPresentationStyle = .fullScreen
                 photo.modalPresentationStyle = .fullScreen
                 self.superVC?.present(photo, animated: true, completion: nil)
             }
